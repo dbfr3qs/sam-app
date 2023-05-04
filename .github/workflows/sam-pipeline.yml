@@ -18,7 +18,9 @@ jobs:
           role-to-assume: arn:aws:iam::750090735300:role/GithubActionIAMRole
           role-session-name: githubactionrolesession
           aws-region: us-east-1
+      - name: setup python
         uses: actions/setup-python@v2
+      - name: setup AWS SAM
         uses: aws-actions/setup-sam@v1
       # sam build 
       - run: sam build --use-container
