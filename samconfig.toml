@@ -19,7 +19,7 @@ confirm_changeset = true
 resolve_s3 = true
 s3_prefix = "sam-app"
 region = "us-east-1"
-profile = "AdministratorAccess-750090735300"
+profile = "GithubActionIAMRole"
 image_repositories = []
 
 [default.package.parameters]
